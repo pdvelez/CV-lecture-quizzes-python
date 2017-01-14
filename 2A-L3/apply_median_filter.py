@@ -7,8 +7,8 @@ def imnoise(img_in, method, dens):
 
     if method == 'salt & pepper':
         img_out = np.copy(img_in)
-        w, h = img_in.shape
-        x = np.random.rand(w, h)
+        r, c = img_in.shape
+        x = np.random.rand(r, c)
         ids = x < dens / 2.
         img_out[ids] = 0
         ids = dens / 2. <= x

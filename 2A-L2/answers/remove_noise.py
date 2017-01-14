@@ -17,8 +17,8 @@ cv2.imshow('Img', img)
 
 # Add some noise
 noise_sigma = 25
-w, h = img.shape
-noise = np.random.randn(w, h) * noise_sigma
+r, c = img.shape
+noise = np.random.randn(r, c) * noise_sigma
 noisy_img = img + noise
 
 imshow('Noisy Image', noisy_img)  # Customized imshow function to match the quiz
