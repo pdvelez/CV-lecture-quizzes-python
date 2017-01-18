@@ -18,7 +18,7 @@ def select_gdir(gmag, gdir, mag_min, angle_low, angle_high):
     return result.astype(np.float)  # Converts bool array to float [0., 1.]
 
 # Load and convert image to double type, range [0, 1] for convenience
-img = cv2.imread('images/octagon.png', 0) / 255.
+img = cv2.imread('../images/octagon.png', 0) / 255.
 cv2.imshow('Image', img)  # assumes [0, 1] range for double images
 
 # Compute x, y gradients

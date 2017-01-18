@@ -2,7 +2,7 @@ import cv2
 
 # Color planes
 
-img = cv2.imread('images/fruit.png')
+img = cv2.imread('../images/fruit.png')
 cv2.imshow("Fruit image", img)
 
 print img.shape

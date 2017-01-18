@@ -1,4 +1,3 @@
-import os
 import cv2
 import numpy as np
 
@@ -16,12 +15,8 @@ def blend(a, b, alpha):
     """
     # TODO: Your code here
 
-if os.name == "nt":  # Simple hack for windows users
-    dolphin = cv2.imread(os.path.join("..\images", "dolphin.png"))
-    bicycle = cv2.imread(os.path.join("..\images", "bicycle.png"))
-else:
-    dolphin = cv2.imread(os.path.join("images", "dolphin.png"))
-    bicycle = cv2.imread(os.path.join("images", "bicycle.png"))
+dolphin = cv2.imread("images/dolphin.png")
+bicycle = cv2.imread("images/bicycle.png")
 
 result = blend(dolphin, bicycle, 0.75)
 cv2.imshow('Result', result.astype(np.uint8))

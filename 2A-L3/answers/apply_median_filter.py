@@ -25,7 +25,7 @@ def imnoise(img_in, method, dens):
 # Apply a median filter
 
 # Read an image
-img = cv2.imread('images/moon.png', 0)
+img = cv2.imread('../images/moon.png', 0)
 cv2.imshow('Image', img)
 
 # Add salt & pepper

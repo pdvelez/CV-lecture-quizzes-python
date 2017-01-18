@@ -23,8 +23,8 @@ def find_best_match(patch, strip):
 # Test code:
 
 # Load images
-left = cv2.imread('images/flowers-left.png')
-right = cv2.imread('images/flowers-right.png')
+left = cv2.imread('../images/flowers-left.png')
+right = cv2.imread('../images/flowers-right.png')
 cv2.imshow('Left', left)
 cv2.imshow('Right', right)
 

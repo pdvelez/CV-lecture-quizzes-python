@@ -12,7 +12,7 @@ def find_template_2D(template, img):
     y, x = np.unravel_index(np.argmax(c), c.shape)
     return y - template.shape[0] // 2, x - template.shape[1] // 2
 
-tablet = cv2.imread('images/tablet.png', 0)
+tablet = cv2.imread('../images/tablet.png', 0)
 cv2.imshow('Tablet', tablet)
 
 glyph = tablet[74:165, 149:184]

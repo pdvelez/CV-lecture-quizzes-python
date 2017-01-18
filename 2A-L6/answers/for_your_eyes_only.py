@@ -3,8 +3,8 @@ import numpy as np
 
 
 # For Your Eyes Only
-frizzy = cv2.imread('images/frizzy.png', 0)
-froomer = cv2.imread('images/froomer.png', 0)
+frizzy = cv2.imread('../images/frizzy.png', 0)
+froomer = cv2.imread('../images/froomer.png', 0)
 cv2.imshow('Frizzy', frizzy)
 cv2.imshow('Froomer', froomer)
 

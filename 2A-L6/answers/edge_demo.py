@@ -33,7 +33,7 @@ def LoG(size, sigma):
 # Edge demo
 
 # Read Lena image
-lenaL = cv2.imread('images/lena.png')
+lenaL = cv2.imread('../images/lena.png')
 cv2.imshow('Original image, color', lenaL)
 
 # Convert to monochrome (grayscale) using BGR2GRAY

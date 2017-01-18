@@ -12,7 +12,7 @@ def imshow(title, image):
     cv2.imshow(title, image.astype(np.uint8))
 
 # Apply a Gaussian filter to remove noise
-img = cv2.imread('images/saturn.png', 0)
+img = cv2.imread('../images/saturn.png', 0)
 cv2.imshow('Img', img)
 
 # Add some noise

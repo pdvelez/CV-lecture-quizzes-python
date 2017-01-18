@@ -3,7 +3,7 @@ import cv2
 # Explore edge options
 
 # Load an image
-img = cv2.imread('images/fall-leaves.png')
+img = cv2.imread('../images/fall-leaves.png')
 cv2.imshow('Image', img)
 
 # Create a Gaussian Filter
