@@ -4,7 +4,7 @@ This repository contains an **unofficial** python version of the Matlab quizzes 
 
 The code available was implemented to closely mimic the results shown in each quiz.
 
-## Available quizzes (so far):
+## Available quizzes:
 
 * 2A-L1
 * 2A-L2
@@ -14,4 +14,4 @@ The code available was implemented to closely mimic the results shown in each qu
 * 3A-L2
 * 3B-L3
 
-I am still working on the remaining lectures. If there is a quiz missing in the existing sections, open a ticket and I will work on it as soon as possible.
+If there is a quiz missing in the existing sections, open a ticket and I will work on it as soon as possible.
