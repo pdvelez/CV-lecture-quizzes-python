@@ -18,8 +18,6 @@ def imshow(title, image):
 # Apply a Gaussian filter to remove noise
 img = cv2.imread('images/saturn.png', 0) # Read image as grayscale (because of 0. for color, use 1. for unchanged, use -1)
 imshow('Img_original', img)
-X, Y = map(np.arange, img.shape)
-X, Y = np.meshgrid(X, Y, indexing='ij')
 
 # TODO: Add noise to the image
 noise_sigma = 25 # noise standard deviation
@@ -38,6 +36,9 @@ imshow('Img_getGaussianKernel', img_getGaussianKernel)
 img_GaussianBlur = cv2.GaussianBlur(img_noisy,(11,11),2)
 imshow('Img_GaussianBlur', img_GaussianBlur)
 
+# - some stat visualization of image
+# X, Y = map(np.arange, img.shape)
+# X, Y = np.meshgrid(X, Y, indexing='ij')
 # fig=plt.figure()
 # ax=Axes3D(fig)
 # ax.plot_surface(X, Y, noise)
