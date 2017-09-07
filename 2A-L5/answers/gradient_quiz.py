@@ -32,7 +32,7 @@ gmag = np.sqrt(gx**2 + gy**2)
 # The minus sign here is used based on how imgradient is implemented in octave
 # See https://sourceforge.net/p/octave/image/ci/default/tree/inst/imgradient.m#l61
 gdir = np.arctan2(-gy, gx) * 180 / np.pi
-cv2.imshow('Gmag', normalize(gmag / (4 * np.sqrt(2))).astype(np.uint8))
+cv2.imshow('Gmag', gmag / (4 * np.sqrt(2)))
 cv2.imshow('Gdir', normalize(gdir).astype(np.uint8))
 
 # Find pixels with desired gradient direction
