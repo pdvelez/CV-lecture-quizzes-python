@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 
 # Find best match from the previous quiz
 def find_best_match(patch, strip):
-    # TODO: Find patch in strip and return column index (x value) of topleft corner
 
     # We will use SSD to find out the best match
     best_id = 0
@@ -51,8 +50,8 @@ left_gray = cv2.cvtColor(left, cv2.COLOR_BGR2GRAY) / 255.
 right_gray = cv2.cvtColor(right, cv2.COLOR_BGR2GRAY) / 255.
 
 # Define strip row (y) and square block size (b)
-y = 94  # Adapted to mimic quiz results
-b = 80
+y = 120
+b = 100
 
 # Extract strip from left image
 strip_left = left_gray[y: y + b, :]
