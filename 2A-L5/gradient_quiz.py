@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-import scipy.signal as sp
 
 
 def normalize(img_in):
@@ -25,12 +24,12 @@ gy = cv2.Sobel(img, -1, dx=0, dy=1)
 cv2.imshow('Gx', gx)
 cv2.imshow('Gy', gy)
 
-gmag = np.sqrt(gx**2 + gy**2) / (4 * np.sqrt(2))
+gmag = np.sqrt(gx**2 + gy**2)
 
 # The minus sign here is used based on how imgradient is implemented in octave
 # See https://sourceforge.net/p/octave/image/ci/default/tree/inst/imgradient.m#l61
 gdir = np.arctan2(-gy, gx) * 180 / np.pi
-cv2.imshow('Gmag', normalize(gmag).astype(np.uint8))
+cv2.imshow('Gmag', normalize(gmag / (4 * np.sqrt(2))).astype(np.uint8))
 cv2.imshow('Gdir', normalize(gdir).astype(np.uint8))
 
 # Find pixels with desired gradient direction
