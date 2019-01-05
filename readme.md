@@ -13,5 +13,7 @@ The code available was implemented to closely mimic the results shown in each qu
 * 2A-L6
 * 3A-L2
 * 3B-L3
+* 6B-L3
+* 8C-L2
 
-If there is a quiz missing in the existing sections, open a ticket and I will work on it as soon as possible.
+Quizzes 2A to 3B were taken from https://github.com/pdvelez/CV-lecture-quizzes-python. 
