@@ -1,4 +1,5 @@
 import cv2
+import numpy as np
 
 def compute_integral(img):
 	#TODO: Compute I such that I(y,x) = sum of img(1,1) to img(y,x)
