@@ -15,5 +15,3 @@ The code available was implemented to closely mimic the results shown in each qu
 * 3B-L3
 * 6B-L3
 * 8C-L2
-
-Quizzes 2A through 3B were taken from https://github.com/pdvelez/CV-lecture-quizzes-python. 
