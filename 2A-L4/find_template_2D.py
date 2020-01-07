@@ -19,7 +19,7 @@ tablet_2 = 1. * tablet - np.mean(tablet)
 glyph_2 = 1. * glyph - np.mean(glyph)
 
 y, x = find_template_2D(glyph_2, tablet_2)
-print "Y: {}, X: {}".format(y, x)
+print("Y: {}, X: {}".format(y, x))
 
 # The code below is not part of the quiz but helps to verify the results are
 # what we are looking for.

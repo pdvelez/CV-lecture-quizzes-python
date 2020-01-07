@@ -5,7 +5,7 @@ import cv2
 img = cv2.imread('../images/fruit.png')
 cv2.imshow("Fruit image", img)
 
-print img.shape
+print(img.shape)
 
 # TODO: Select a color plane, display it, inspect values from a row
 
@@ -19,7 +19,7 @@ cv2.imshow("Green color plane", green)
 cv2.imshow("Blue color plane", blue)
 
 # Let's select the green plane, pick a row, and print the values
-print "Green color plane, 100-th row \n {}".format(green[99, :])
+print("Green color plane, 100-th row \n {}".format(green[99, :]))
 
 # Let's draw a horizontal line across that row we picked, just for fun
 # But in order to see the line in color we need to convert green to a 3-channel array

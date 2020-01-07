@@ -63,7 +63,7 @@ cv2.imshow('Strip Right', strip_right)
 
 # Now match these two strips to compute disparity values
 disparity = match_strips(strip_left, strip_right, b)
-print disparity[0]
+print( disparity[0])
 
 # Finally we plot the disparity values. Note that there may be some differences
 # in the results shown in the quiz because we had to adapt the index values.
