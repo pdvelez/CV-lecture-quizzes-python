@@ -47,7 +47,7 @@ cv2.imshow('Strip', strip_right)
 
 # Now look for the patch in the strip and report the best position (column index of topleft corner)
 best_x = find_best_match(patch_left, strip_right)
-print best_x
+print( best_x)
 
 patch_right = right_gray[patch_loc[0]: patch_loc[0] + patch_size[0],
                          best_x: best_x + patch_size[1]]

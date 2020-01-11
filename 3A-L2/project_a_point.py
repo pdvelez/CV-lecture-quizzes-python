@@ -15,4 +15,4 @@ def project_point(p, f):
 p = np.array([[200, 100, 120]])
 f = 50
 
-print project_point(p, f)
+print (project_point(p, f))

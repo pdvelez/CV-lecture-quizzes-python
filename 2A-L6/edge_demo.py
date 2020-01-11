@@ -43,7 +43,7 @@ cv2.imshow('Original image, monochrome', lenaMono)
 # Make a blurred/smoothed version. Use cv2.getGaussianKernel to get the h kernel
 h = None  # TODO: change this line with the call to cv2.getGaussianKernel
 
-print h
+print( h)
 
 # Mimic Matlab's surf(h)
 surf(h)

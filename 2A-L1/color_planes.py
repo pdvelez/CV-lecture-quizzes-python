@@ -5,7 +5,7 @@ import cv2
 img = cv2.imread('images/fruit.png')
 cv2.imshow("Fruit image", img)
 
-print img.shape
+print(img.shape)
 
 # TODO: Select a color plane, display it, inspect values from a row
 

@@ -18,7 +18,7 @@ def imnoise(img_in, method, dens):
         return img_out
 
     else:
-        print "Method {} not yet implemented.".format(method)
+        print("Method {} not yet implemented.".format(method))
         exit()
 
 

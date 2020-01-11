@@ -44,7 +44,7 @@ cv2.imshow('Original image, monochrome', lenaMono)
 h = cv2.getGaussianKernel(11, 4)
 h = h * h.T
 
-print h
+print(h)
 
 # Mimic Matlab's surf(h)
 surf(h)
