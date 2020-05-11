@@ -34,5 +34,5 @@ cv2.imshow('Gdir', normalize(gdir).astype(np.uint8))
 
 # Find pixels with desired gradient direction
 my_grad = select_gdir(gmag, gdir, 1, 30, 60)
-cv2.imshow('My Grad', my_grad)
+cv2.imshow('My Grad', normalize(my_grad).astype(np.uint8))
 cv2.waitKey(0)
